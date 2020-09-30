@@ -27,8 +27,7 @@ class Student
     # find the student in the database given a name
     # return a new instance of the Student class
     sql = <<-SQL
-      INSERT INTO students (name, grade) 
-      VALUES (?, ?)
+      SELECT * students
       WHERE name = ?
       LIMIT 1
     SQL
